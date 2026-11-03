@@ -181,15 +181,4 @@ git remote add origin https://github.com/adyputra7j-web/uts-pemweb-[NIM].git
 git push -u origin main
 ```
 
----
 
-## 9. Lembar Persiapan Uji Demo Dosen (5 Menit)
-
-Berikut bocoran instruksi yang sering diajukan dosen penguji saat demo langsung:
-
-1. **Dosen meminta menambah 1 game baru:**
-   - Buka `data.php`, salin satu blok array di `$koleksiGame`, ubah `'id' => 13`, masukkan judul game baru (misal: *Tekken 5*), lalu simpan. Refresh browser, game akan langsung muncul tanpa mengubah HTML!
-2. **Dosen meminta mengubah warna badge status:**
-   - Buka `functions.php` pada fungsi `getStatusBadge()`. Anda cukup mengubah string kelas CSS pada ekspresi `match`.
-3. **Dosen meminta menjelaskan fungsi array bawaan:**
-   - Tunjukkan fungsi `getCollectionStats()` di `functions.php`. Jelaskan bahwa `array_column()` mengambil seluruh angka jam main, lalu `array_sum()` menjumlahkannya secara efisien.
